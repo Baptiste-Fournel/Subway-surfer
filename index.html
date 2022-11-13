@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Surfer</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="subway.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="button" id="jouer">
+            <button type="button" onclick="addPerso()" class="btn_jouer">
+                JOUER
+            </button>
+        </div>
+        <div class="container" id="container">
+            <div id="nv_perso" class="nv_perso">
+                <img src="images/Jake.png" alt="Jake" id="jakeImg" class="jakeImg" name="imgPerso">
+                <select name="Addperso" onchange="changePerso(this)" id="choix_perso" class="choix_perso">
+                    <option id="jake" value="Jake">Jake</option>
+                    <option id="frank" value="Franck">Franck</option>
+                    <option id="tricky" value="Tricky">Tricky</option>
+                    <option id="fresh" value="Fresh">Fresh</option>
+                    <option id="yutani" value="Yutani">Yutani</option>
+                </select>
+                <div class="Plus">
+                    <img src="images/plus.png" onclick="nvPerso(choix_perso)" id="addperso" width="30">
+                </div>
+            </div>
+            <div class="cardcontainer" id="cardcontainer">
+                <div id="exampleCard" class="persoCard hidden">
+                    <img src="images/Jake.png" alt="Jake" id="jakeImg" class="jakeImg" name="imgPerso">
+                    
+                    <div class="Delete" id="Delete">
+                        <img src="images/croix.png" onclick="deletePerso(exampleCard)" id="deleteperso" width="30">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

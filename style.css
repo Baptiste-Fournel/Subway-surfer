@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'Titan One';
+    src: url(TitanOne-Regular.ttf) format('truetype');
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    background-image: url("images/subwaysurferimg.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.button{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_jouer{
+    font-family: Titan One;
+    background-color: orange;
+    transition: 1s;
+    border: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.Plus{
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.nv_perso{
+    flex-direction: column;
+    justify-content: center;
+    align-self:center;
+    text-align: center;
+    background-image: url("images/multicolor.jpg");
+    padding: 0px 15px 28px 15px;
+    width: 13rem;
+    height: 18rem;
+    display: flex;
+    padding-top: 20px;
+}
+
+.persoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("images/multicolor.jpg");
+    padding: 0px 15px 28px 15px;
+    width: 13rem;
+    height: 18rem;
+    padding-top: 20px;
+}
+
+
+.container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content:space-around;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.hidden {
+    display:none;
+}
